@@ -38,8 +38,8 @@ p {
   height: 12px;
   border-radius: 50%;
   position: relative;
-  -webkit-animation: loader10-uy5cxhp 0.6s ease alternate infinite;
-          animation: loader10-uy5cxhp 0.6s ease alternate infinite;
+  -webkit-animation: loader10-u05ibuw 0.6s ease alternate infinite;
+          animation: loader10-u05ibuw 0.6s ease alternate infinite;
   -webkit-animation-delay: 0.24s;
           animation-delay: 0.24s;
   top: -12px;
@@ -53,8 +53,8 @@ p {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  -webkit-animation: loader10-uy5cxhp 0.6s ease alternate infinite;
-          animation: loader10-uy5cxhp 0.6s ease alternate infinite;
+  -webkit-animation: loader10-u05ibuw 0.6s ease alternate infinite;
+          animation: loader10-u05ibuw 0.6s ease alternate infinite;
 }
 .main_loader::before {
   left: -22px;
@@ -66,7 +66,7 @@ p {
   -webkit-animation-delay: 0.36s;
           animation-delay: 0.36s;
 }
-@-webkit-keyframes loader10-uy5cxhp {
+@-webkit-keyframes loader10-u05ibuw {
   0% {
     box-shadow: 0 12px 0 -12px #E02678;
   }
@@ -74,7 +74,7 @@ p {
     box-shadow: 0 12px 0 #E02678;
   }
 }
-@keyframes loader10-uy5cxhp {
+@keyframes loader10-u05ibuw {
   0% {
     box-shadow: 0 12px 0 -12px #E02678;
   }
@@ -181,6 +181,10 @@ p {
     padding: 15px 18px;
   }
 }
+.chat-main__message-box__item-link {
+  color: inherit;
+  cursor: default;
+}
 .chat-main__message-box__user-item {
   display: inline-block;
   background-color: #E02678;
@@ -214,7 +218,7 @@ p {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  cursor: pointer;
+  cursor: default;
   transition: all ease 0.6s;
 }
 .chat-main__message-box__image_item:hover {
@@ -258,8 +262,8 @@ p {
   height: 5px;
   border-radius: 50%;
   position: relative;
-  -webkit-animation: loader10-uy5cxin 0.6s ease alternate infinite;
-          animation: loader10-uy5cxin 0.6s ease alternate infinite;
+  -webkit-animation: loader10-u05ibux 0.6s ease alternate infinite;
+          animation: loader10-u05ibux 0.6s ease alternate infinite;
   -webkit-animation-delay: 0.24s;
           animation-delay: 0.24s;
   top: -5px;
@@ -273,8 +277,8 @@ p {
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  -webkit-animation: loader10-uy5cxin 0.6s ease alternate infinite;
-          animation: loader10-uy5cxin 0.6s ease alternate infinite;
+  -webkit-animation: loader10-u05ibux 0.6s ease alternate infinite;
+          animation: loader10-u05ibux 0.6s ease alternate infinite;
 }
 .chat__footer__loader::before {
   left: -10px;
@@ -286,7 +290,7 @@ p {
   -webkit-animation-delay: 0.36s;
           animation-delay: 0.36s;
 }
-@-webkit-keyframes loader10-uy5cxin {
+@-webkit-keyframes loader10-u05ibux {
   0% {
     box-shadow: 0 5px 0 -5px #E02678;
   }
@@ -294,7 +298,7 @@ p {
     box-shadow: 0 5px 0 #E02678;
   }
 }
-@keyframes loader10-uy5cxin {
+@keyframes loader10-u05ibux {
   0% {
     box-shadow: 0 5px 0 -5px #E02678;
   }
@@ -350,6 +354,13 @@ p {
     font-size: 14px;
     padding: 10px 18px;
   }
+}
+
+.--pink_text {
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 500;
+  color: #E02678;
 }
 
 .remove {
