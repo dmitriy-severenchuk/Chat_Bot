@@ -252,6 +252,7 @@ p{
             background-color: rgb(202, 34, 107);
         }
         &.--agree{
+            text-transform: Capitalize;
             display: none;
             transform: translate(0, 0);
             transition: all ease .4s;

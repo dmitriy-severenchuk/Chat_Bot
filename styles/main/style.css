@@ -34,8 +34,8 @@ p {
   height: 12px;
   border-radius: 50%;
   position: relative;
-  -webkit-animation: loader10-uy5cx90 0.6s ease alternate infinite;
-          animation: loader10-uy5cx90 0.6s ease alternate infinite;
+  -webkit-animation: loader10-uy5cxb3 0.6s ease alternate infinite;
+          animation: loader10-uy5cxb3 0.6s ease alternate infinite;
   -webkit-animation-delay: 0.24s;
           animation-delay: 0.24s;
   top: -12px;
@@ -49,8 +49,8 @@ p {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  -webkit-animation: loader10-uy5cx90 0.6s ease alternate infinite;
-          animation: loader10-uy5cx90 0.6s ease alternate infinite;
+  -webkit-animation: loader10-uy5cxb3 0.6s ease alternate infinite;
+          animation: loader10-uy5cxb3 0.6s ease alternate infinite;
 }
 .main_loader::before {
   left: -22px;
@@ -62,7 +62,7 @@ p {
   -webkit-animation-delay: 0.36s;
           animation-delay: 0.36s;
 }
-@-webkit-keyframes loader10-uy5cx90 {
+@-webkit-keyframes loader10-uy5cxb3 {
   0% {
     box-shadow: 0 12px 0 -12px #E02678;
   }
@@ -70,7 +70,7 @@ p {
     box-shadow: 0 12px 0 #E02678;
   }
 }
-@keyframes loader10-uy5cx90 {
+@keyframes loader10-uy5cxb3 {
   0% {
     box-shadow: 0 12px 0 -12px #E02678;
   }
@@ -254,8 +254,8 @@ p {
   height: 5px;
   border-radius: 50%;
   position: relative;
-  -webkit-animation: loader10-uy5cx9l 0.6s ease alternate infinite;
-          animation: loader10-uy5cx9l 0.6s ease alternate infinite;
+  -webkit-animation: loader10-uy5cxbr 0.6s ease alternate infinite;
+          animation: loader10-uy5cxbr 0.6s ease alternate infinite;
   -webkit-animation-delay: 0.24s;
           animation-delay: 0.24s;
   top: -5px;
@@ -269,8 +269,8 @@ p {
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  -webkit-animation: loader10-uy5cx9l 0.6s ease alternate infinite;
-          animation: loader10-uy5cx9l 0.6s ease alternate infinite;
+  -webkit-animation: loader10-uy5cxbr 0.6s ease alternate infinite;
+          animation: loader10-uy5cxbr 0.6s ease alternate infinite;
 }
 .chat__footer__loader::before {
   left: -10px;
@@ -282,7 +282,7 @@ p {
   -webkit-animation-delay: 0.36s;
           animation-delay: 0.36s;
 }
-@-webkit-keyframes loader10-uy5cx9l {
+@-webkit-keyframes loader10-uy5cxbr {
   0% {
     box-shadow: 0 5px 0 -5px #E02678;
   }
@@ -290,7 +290,7 @@ p {
     box-shadow: 0 5px 0 #E02678;
   }
 }
-@keyframes loader10-uy5cx9l {
+@keyframes loader10-uy5cxbr {
   0% {
     box-shadow: 0 5px 0 -5px #E02678;
   }
@@ -329,6 +329,7 @@ p {
   background-color: #ca226b;
 }
 .chat__footer__btn.--agree {
+  text-transform: Capitalize;
   display: none;
   transform: translate(0, 0);
   transition: all ease 0.4s;
