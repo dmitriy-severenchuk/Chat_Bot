@@ -34,8 +34,8 @@ p {
   height: 12px;
   border-radius: 50%;
   position: relative;
-  -webkit-animation: loader10-ugvxk37 0.6s ease alternate infinite;
-          animation: loader10-ugvxk37 0.6s ease alternate infinite;
+  -webkit-animation: loader10-ud712tm 0.6s ease alternate infinite;
+          animation: loader10-ud712tm 0.6s ease alternate infinite;
   -webkit-animation-delay: 0.24s;
           animation-delay: 0.24s;
   top: -12px;
@@ -49,8 +49,8 @@ p {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  -webkit-animation: loader10-ugvxk37 0.6s ease alternate infinite;
-          animation: loader10-ugvxk37 0.6s ease alternate infinite;
+  -webkit-animation: loader10-ud712tm 0.6s ease alternate infinite;
+          animation: loader10-ud712tm 0.6s ease alternate infinite;
 }
 .main_loader::before {
   left: -22px;
@@ -62,7 +62,7 @@ p {
   -webkit-animation-delay: 0.36s;
           animation-delay: 0.36s;
 }
-@-webkit-keyframes loader10-ugvxk37 {
+@-webkit-keyframes loader10-ud712tm {
   0% {
     box-shadow: 0 12px 0 -12px #E02678;
   }
@@ -70,7 +70,7 @@ p {
     box-shadow: 0 12px 0 #E02678;
   }
 }
-@keyframes loader10-ugvxk37 {
+@keyframes loader10-ud712tm {
   0% {
     box-shadow: 0 12px 0 -12px #E02678;
   }
@@ -118,21 +118,21 @@ p {
 }
 
 .chat-main__avatar-box {
-  display: inline-block;
-  min-width: 40px;
+  display: block;
+  max-width: 40px;
   height: 40px;
   border-radius: 50%;
   overflow: hidden;
-  margin-right: 30px;
+  margin-right: 20px;
 }
 @media (max-width: 799px) {
   .chat-main__avatar-box {
-    margin-right: 20px;
+    margin-right: 12px;
   }
 }
 .chat-main__avatar-box_item {
   display: block;
-  width: 100%;
+  min-width: 100%;
   height: 100%;
   border-radius: 50%;
   -o-object-fit: cover;
@@ -243,14 +243,19 @@ p {
     font-size: 12px;
   }
 }
+@media (max-width: 449px) {
+  .chat__footer__clock {
+    margin-left: 1.5px;
+  }
+}
 
 .chat__footer__loader {
   width: 5px;
   height: 5px;
   border-radius: 50%;
   position: relative;
-  -webkit-animation: loader10-ugvxk41 0.6s ease alternate infinite;
-          animation: loader10-ugvxk41 0.6s ease alternate infinite;
+  -webkit-animation: loader10-ud712ug 0.6s ease alternate infinite;
+          animation: loader10-ud712ug 0.6s ease alternate infinite;
   -webkit-animation-delay: 0.24s;
           animation-delay: 0.24s;
   top: -5px;
@@ -264,8 +269,8 @@ p {
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  -webkit-animation: loader10-ugvxk41 0.6s ease alternate infinite;
-          animation: loader10-ugvxk41 0.6s ease alternate infinite;
+  -webkit-animation: loader10-ud712ug 0.6s ease alternate infinite;
+          animation: loader10-ud712ug 0.6s ease alternate infinite;
 }
 .chat__footer__loader::before {
   left: -10px;
@@ -277,7 +282,7 @@ p {
   -webkit-animation-delay: 0.36s;
           animation-delay: 0.36s;
 }
-@-webkit-keyframes loader10-ugvxk41 {
+@-webkit-keyframes loader10-ud712ug {
   0% {
     box-shadow: 0 5px 0 -5px #E02678;
   }
@@ -285,7 +290,7 @@ p {
     box-shadow: 0 5px 0 #E02678;
   }
 }
-@keyframes loader10-ugvxk41 {
+@keyframes loader10-ud712ug {
   0% {
     box-shadow: 0 5px 0 -5px #E02678;
   }

@@ -17,6 +17,7 @@ const remove_messageLoader = () => {
 };
 
 // Page Mounting
+
 const mounted = new Promise((resolve) => {
   resolve(document.getElementById("pageLoading").classList.add("show"));
 })
