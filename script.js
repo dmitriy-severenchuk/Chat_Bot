@@ -26,20 +26,43 @@ const mounted = new Promise((resolve) => {
       document.getElementById("pageLoading").classList.remove("show"),
         document.getElementById("chat").classList.add("show");
     }, 1500);
-  })
-  .then(() => {
-    setTimeout(() => {
-      startButton.classList.add("activeStartBtn");
-    }, 1600);
   });
 
 //Start
 
-startButton.addEventListener("click", () => {
+// startButton.addEventListener("click", () => {
+//   new Promise((resolve) => {
+//     resolve(
+//       messageFirst.classList.add("remove"),
+//       footer.classList.add("remove"),
+//       clock.classList.add("invisible"),
+//       chatMain.classList.add("invisible")
+//     );
+//   })
+//     .then(() => {
+//       setTimeout(() => {
+//         chatMain.classList.remove("invisible");
+//       }, 1500);
+//     })
+//     .then(() => {
+//       for (let i = 0; i < 3; i++) {
+//         (function (index) {
+//           setTimeout(() => {
+//             show_messageLoader(), this.message[index].classList.add("show");
+//           }, 1500 * (index + 1));
+//           // "Да"
+//           setTimeout(() => {
+//             agreeButton.classList.add("show"),
+//               messageLoader.classList.remove("show");
+//           }, 1500 * 3);
+//         })(i);
+//       }
+//     });
+// });
+
+mounted.then(()=>{
   new Promise((resolve) => {
     resolve(
-      messageFirst.classList.add("remove"),
-      footer.classList.add("remove"),
       clock.classList.add("invisible"),
       chatMain.classList.add("invisible")
     );
@@ -63,7 +86,8 @@ startButton.addEventListener("click", () => {
         })(i);
       }
     });
-});
+})
+  
 
 // Agree
 
