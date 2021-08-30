@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,100&display=swap');
+@import '../loader/loaders';
+
+// MEDIA =================
+
+@mixin for-laptop {
+    @media (max-width: 994px){
+        @content;
+    }
+}
+@mixin for-tablet {
+    @media (max-width: 799px){
+        @content;
+    }
+}
+@mixin for-tablet-small {
+    @media (max-width: 699px){
+        @content;
+    }
+}
+@mixin for-iphone-plus {
+    @media (max-width: 449px){
+        @content;
+    }
+}
+@mixin for-iphone-seven {
+    @media (max-width: 396px){
+        @content;
+    }
+}
+@mixin for-iphone-SE {
+    @media (max-width: 345px){
+        @content;
+    }
+}
+//
+
+$pink: #E02678;
+$white: #000;
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F1F2F9;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(47, 50, 74);
+    margin: 0;
+}
+
+.container{
+    max-width: 1370px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+*,
+*:after,
+*:before{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
+// LOADER ================================================
+
+.main_loader{
+  @include loader1;
+  margin: 0 auto;
+  margin-top: calc(50vh - 91px - 8px);
+  display: none;
+} 
+
+//CHAT ===================
+
+.chat{
+    width: 100%;
+    margin: 150px 0 300px;
+}
+.chat__inner{
+    width: 100%;
+    display: none;
+}
+.chat-wrapper{
+    width: 100%;
+    max-width: 670px;
+    margin: 0 auto;
+    @include for-tablet{
+        max-width: 640px;
+    }
+    @include for-tablet-small{
+        padding: 0 20px 0 10px;
+    }
+    @include for-iphone-plus{
+        padding: 0 15px 0 10px;
+    }
+}
+.chat-main{
+    display: flex;
+    align-items: flex-end;
+
+    transition: all ease .2s;
+    opacity: 1;
+}
+.chat-main__avatar-box{
+    display: inline-block;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 30px;
+    @include for-tablet{
+        margin-right: 20px;
+    }
+    &_item{
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+.chat-main__message-box__item-wrapper{
+    display: none;
+    width: 100%;
+    margin-top: 6px;
+    &:first-child{
+        display: block;
+    }
+}
+.chat-main__message-box__user-item-wrapper{
+    display: none;
+    justify-content: flex-end;
+    margin-top: 6px;
+}
+.chat-main__message-box{
+    width: 100%;
+    font-size: 16px;
+    &__item{
+        display: inline-block;
+        background-color: #fff;
+        line-height: 1.5;
+        border-radius: 12px 12px 12px 1px;
+        padding: 20px;
+        @include for-tablet{
+            font-size: 15px;
+            padding: 18px 20px;
+        }
+        @include for-iphone-plus{
+            font-size: 14px;
+            padding: 15px 18px;
+        }
+    }
+    &__user-item{
+        display: inline-block;
+        background-color: $pink;
+        color: #fff;
+        border-radius: 12px 12px 1px 12px ;
+        padding: 20px;
+        @include for-tablet{
+            font-size: 15px;
+            padding: 18px 20px;
+        }
+        @include for-iphone-plus{
+            font-size: 14px;
+            padding: 15px 18px;
+        }
+    }
+    &__image{
+        display: none;
+        width: 160px;
+        height: auto;
+        border-radius: 12px 12px 12px 1px;
+        margin-top: 6px;
+        overflow: hidden;
+        &_item{
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            cursor: pointer;
+            transition: all ease .6s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+        &.--second_image{
+            width: 180px;
+        }
+    }
+}
+
+// FOOTER
+
+.chat__footer-wrapper{
+    display: flex;
+}
+.chat__footer__loader-box{
+    width: 70px;
+    padding-left: 5px;
+    @include for-tablet{
+        width: 60px;
+    }
+}    
+.chat__footer__clock{
+    font-size: 13px;
+    transition: all ease .2s;
+    @include for-tablet-small{
+        font-size: 12px;
+    }
+}
+.chat__footer__loader{
+    @include loader2;
+    margin-left: 12px;
+    margin-top: -15px;
+    display: none;
+}
+.chat__footer{
+    width: 100%;
+    margin-top: 6px;
+    &__title{
+        text-transform: uppercase;
+        font-size: 11px;
+        margin: 5px 0 10px 0;
+    }
+    &__btn{
+        min-width: 180px;
+        display: inline-block;
+        color: #fff;
+        font-size: 15px;
+        background-color: $pink;
+        border-radius: 9px;
+        border: 2px solid transparent;
+        text-transform: uppercase;
+        outline: none;
+        cursor: pointer;
+        margin-right: 3px;
+        padding: 15px 30px;
+        //animation
+        transition: all ease .4s, background-color ease .1s,;
+        transform: translate(0, 40%);
+        opacity: 0;
+        &:hover{
+            background-color: rgb(202, 34, 107);
+        }
+        &.--agree{
+            display: none;
+            transform: translate(0, 0);
+            transition: all ease .4s;
+            opacity: 1;
+        }
+        @include for-tablet-small{
+            min-width: 160px;
+            padding: 12px 24px;
+        }
+        @include for-iphone-plus{
+            font-size: 14px;
+            padding: 10px 18px;
+        }
+    }
+}
+
+// 
+
+.remove{
+    display: none !important;
+}
+.show{
+    display: block !important;
+}
+.show_userMessage{
+    display: flex !important;
+}
+
+//Animations
+
+.activeStartBtn{
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.invisible{
+    opacity: 0;
+}
