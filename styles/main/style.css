@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,100&display=swap");
+html {
+  overflow-y: scroll;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #F1F2F9;
@@ -34,8 +38,8 @@ p {
   height: 12px;
   border-radius: 50%;
   position: relative;
-  -webkit-animation: loader10-uy5cxb3 0.6s ease alternate infinite;
-          animation: loader10-uy5cxb3 0.6s ease alternate infinite;
+  -webkit-animation: loader10-uy5cxhp 0.6s ease alternate infinite;
+          animation: loader10-uy5cxhp 0.6s ease alternate infinite;
   -webkit-animation-delay: 0.24s;
           animation-delay: 0.24s;
   top: -12px;
@@ -49,8 +53,8 @@ p {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  -webkit-animation: loader10-uy5cxb3 0.6s ease alternate infinite;
-          animation: loader10-uy5cxb3 0.6s ease alternate infinite;
+  -webkit-animation: loader10-uy5cxhp 0.6s ease alternate infinite;
+          animation: loader10-uy5cxhp 0.6s ease alternate infinite;
 }
 .main_loader::before {
   left: -22px;
@@ -62,7 +66,7 @@ p {
   -webkit-animation-delay: 0.36s;
           animation-delay: 0.36s;
 }
-@-webkit-keyframes loader10-uy5cxb3 {
+@-webkit-keyframes loader10-uy5cxhp {
   0% {
     box-shadow: 0 12px 0 -12px #E02678;
   }
@@ -70,7 +74,7 @@ p {
     box-shadow: 0 12px 0 #E02678;
   }
 }
-@keyframes loader10-uy5cxb3 {
+@keyframes loader10-uy5cxhp {
   0% {
     box-shadow: 0 12px 0 -12px #E02678;
   }
@@ -254,8 +258,8 @@ p {
   height: 5px;
   border-radius: 50%;
   position: relative;
-  -webkit-animation: loader10-uy5cxbr 0.6s ease alternate infinite;
-          animation: loader10-uy5cxbr 0.6s ease alternate infinite;
+  -webkit-animation: loader10-uy5cxin 0.6s ease alternate infinite;
+          animation: loader10-uy5cxin 0.6s ease alternate infinite;
   -webkit-animation-delay: 0.24s;
           animation-delay: 0.24s;
   top: -5px;
@@ -269,8 +273,8 @@ p {
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  -webkit-animation: loader10-uy5cxbr 0.6s ease alternate infinite;
-          animation: loader10-uy5cxbr 0.6s ease alternate infinite;
+  -webkit-animation: loader10-uy5cxin 0.6s ease alternate infinite;
+          animation: loader10-uy5cxin 0.6s ease alternate infinite;
 }
 .chat__footer__loader::before {
   left: -10px;
@@ -282,7 +286,7 @@ p {
   -webkit-animation-delay: 0.36s;
           animation-delay: 0.36s;
 }
-@-webkit-keyframes loader10-uy5cxbr {
+@-webkit-keyframes loader10-uy5cxin {
   0% {
     box-shadow: 0 5px 0 -5px #E02678;
   }
@@ -290,7 +294,7 @@ p {
     box-shadow: 0 5px 0 #E02678;
   }
 }
-@keyframes loader10-uy5cxbr {
+@keyframes loader10-uy5cxin {
   0% {
     box-shadow: 0 5px 0 -5px #E02678;
   }

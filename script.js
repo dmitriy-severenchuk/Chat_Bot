@@ -72,7 +72,9 @@ agreeButton.addEventListener("click", () => {
     resolve(
       userMessage.classList.add("show_userMessage"),
       agreeButton.classList.remove("show"),
-      show_messageLoader()
+      setTimeout(()=>{
+        show_messageLoader();
+      }, 1000)
     );
   }).then(() => {
     for (let i = 2; i < 6; i++) {

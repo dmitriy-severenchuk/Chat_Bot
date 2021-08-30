@@ -37,6 +37,9 @@
 
 $pink: #E02678;
 $white: #000;
+html {
+    overflow-y: scroll;
+  }
 body{
     font-family: 'Montserrat', sans-serif;
     background-color: #F1F2F9;
